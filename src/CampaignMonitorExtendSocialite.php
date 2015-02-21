@@ -1,0 +1,12 @@
+<?php
+namespace SocialiteProviders\CampaignMonitor;
+
+use SocialiteProviders\Manager\SocialiteWasCalled;
+
+class CampaignMonitorExtendSocialite
+{
+    public function handle(SocialiteWasCalled $socialiteWasCalled)
+    {
+        $socialiteWasCalled->extendSocialite('campaignmonitor', __NAMESPACE__.'\Provider');
+    }
+}
