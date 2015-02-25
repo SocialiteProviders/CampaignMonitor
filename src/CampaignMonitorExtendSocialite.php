@@ -5,8 +5,13 @@ use SocialiteProviders\Manager\SocialiteWasCalled;
 
 class CampaignMonitorExtendSocialite
 {
+    /**
+     * Execute the provider.
+     */
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
-        $socialiteWasCalled->extendSocialite('campaignmonitor', __NAMESPACE__.'\Provider');
+        $socialiteWasCalled->extendSocialite(
+            'campaignmonitor', __NAMESPACE__.'\Provider'
+        );
     }
 }
