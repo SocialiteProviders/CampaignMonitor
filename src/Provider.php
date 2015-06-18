@@ -1,4 +1,5 @@
 <?php
+
 namespace SocialiteProviders\CampaignMonitor;
 
 use Laravel\Socialite\Two\AbstractProvider;
